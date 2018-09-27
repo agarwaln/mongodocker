@@ -1,0 +1,9 @@
+[Unit]
+Description=mongod36_3
+
+[Service]
+ExecStart=/mongodb36/bin/mongod --replSet mongodb36_repl --dbpath /mongodb36/data1 --logpath /mongodb36/logs1/mongodb36.log --logappend --port 37017
+
+
+[Install]
+WantedBy=multi-user.target
